@@ -11,7 +11,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "kient": "^1.0.1-12"
+    "dotenv": "^16.4.5",
+    "kient": "^1.0.1-12",
+    "otp": "^1.1.2"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^7.0.2",
