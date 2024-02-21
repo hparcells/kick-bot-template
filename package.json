@@ -6,16 +6,16 @@
   "scripts": {
     "build": "tsc",
     "start": "cross-env NODE_ENV=production node dist",
-    "dev": "cross-env NODE_ENV=development concurrently \"tsc -w --preserveWatchOutput\" \"nodemon dist\""
+    "dev": "cross-env NODE_ENV=development tsc-watch --onsuccess \"node dist\"",
+    "prod": "cross-env NODE_ENV=production npm run build && npm start"
   },
   "license": "MIT",
   "dependencies": {
     "kient": "^1.0.1-12"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
-    "nodemon": "^3.0.3",
+    "tsc-watch": "^6.0.4",
     "tsconfig": "^7.0.0",
     "typescript": "^5.3.3"
   }
