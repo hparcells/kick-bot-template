@@ -14,7 +14,12 @@
     "kient": "^1.0.1-12"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^7.0.2",
     "cross-env": "^7.0.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
     "tsc-watch": "^6.0.4",
     "tsconfig": "^7.0.0",
     "typescript": "^5.3.3"
